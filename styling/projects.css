@@ -1,0 +1,93 @@
+.content-container {
+  display: block;  
+  max-width: 1100px;
+  background-color: rgb(var(--primary));
+  min-height: 100vh;
+}
+
+.middle-content {
+  width: fit-content;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.pcard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  gap: 20px;
+}
+
+
+
+.project-card {
+  display: block;
+  margin: 0;
+}
+
+.project-links{
+    margin-left:0;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: larger;
+}
+
+
+.project-links a .p-btn{
+    margin-right:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    background-color: rgb(var(--secondary));
+    border-radius: 5px;
+    border: 2px solid rgb(var(--accent));
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 600;
+    /* width: fit-content; */
+    /* max-width: 550px; */
+    height: 40px;
+}
+
+.project-links a .p-btn:hover{
+  box-shadow: 0 0 3px 1px rgba(var(--accent), 0.8);
+}
+
+.project-links .icon{
+    font-size: larger;
+    fill: rgb(var(--accent));
+}
+
+.carousel-item {
+  height: 32rem;
+  text-align: center;
+}
+.carousel-item > img {
+  height: 32rem;
+  margin: auto;
+}
+
+
+@media screen and (max-width: 800px) {
+    .pcard-container {
+        flex-direction: column;
+      }
+      .middle-content {
+        padding-top: 80px;
+        width: 90%;
+      }
+     
+    }
+    @media screen and (max-width: 650px) {
+        .project-card {
+            width: 95%;
+          }
+         
+        }
+    
