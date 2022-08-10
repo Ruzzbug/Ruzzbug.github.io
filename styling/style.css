@@ -191,6 +191,10 @@ a.active{
   background-color: #ffffff44;
 }
 
+a.link-primary {
+  text-decoration: underline;
+}
+
 .middle-content {
   align-content: center;
 }
